@@ -8,23 +8,29 @@ public class SubCircuitNode {
 	public String name;
 	public ArrayList<String> arguments;
 	public int used;
+	public int declarationLines;
 	public SubCircuitNode(int start){
 		startLine=start;
 		used=0;
+		declarationLines=0;
+
 	}
 	public SubCircuitNode(long start, String Name){
 		startLine=start;
 		name = Name;
 		used=0;
+		declarationLines = 0;
 	}
 	public SubCircuitNode(long start, String Name, ArrayList<String> args){
 		startLine=start;
 		name = Name;
 		arguments = args;
 		used=0;
+		declarationLines=0;
 	}
 	public SubCircuitNode() {
 		used=0;
+		declarationLines=0;
 		// TODO Auto-generated constructor stub
 	}
 }
